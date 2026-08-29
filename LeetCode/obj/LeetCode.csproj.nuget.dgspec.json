@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\LeetCode.csproj": {}
+    "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\LeetCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\LeetCode.csproj": {
+    "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\LeetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\LeetCode.csproj",
+        "projectUniqueName": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\LeetCode.csproj",
         "projectName": "LeetCode",
-        "projectPath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\LeetCode.csproj",
+        "projectPath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\LeetCode.csproj",
         "packagesPath": "C:\\Users\\zachl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\obj\\",
+        "outputPath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,12 +53,6 @@
             "CSnakes.Runtime": {
               "target": "Package",
               "version": "[2.*-*, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -72,31 +66,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[9.0.0, 9.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[9.0.0, 9.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[9.0.0, 9.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBgIGSKlYKA=",
+  "dgSpecHash": "yRvQdo787Mw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCode\\LeetCode.csproj",
+  "projectFilePath": "C:\\Users\\zachl\\OneDrive\\Desktop\\LeetCodeTester\\LeetCode\\LeetCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zachl\\.nuget\\packages\\communitytoolkit.highperformance\\8.4.2\\communitytoolkit.highperformance.8.4.2.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\csnakes.runtime\\2.0.0-beta.350\\csnakes.runtime.2.0.0-beta.350.nupkg.sha512",
@@ -33,17 +33,13 @@
     "C:\\Users\\zachl\\.nuget\\packages\\microsoft.extensions.options\\10.0.3\\microsoft.extensions.options.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.3\\microsoft.extensions.options.configurationextensions.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
-    "C:\\Users\\zachl\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.0\\microsoft.net.illink.tasks.9.0.0.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.3\\system.diagnostics.diagnosticsource.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.3\\system.diagnostics.eventlog.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.io.pipelines\\10.0.3\\system.io.pipelines.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.numerics.tensors\\9.0.13\\system.numerics.tensors.9.0.13.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.text.encodings.web\\10.0.3\\system.text.encodings.web.10.0.3.nupkg.sha512",
     "C:\\Users\\zachl\\.nuget\\packages\\system.text.json\\10.0.3\\system.text.json.10.0.3.nupkg.sha512",
-    "C:\\Users\\zachl\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512",
-    "C:\\Users\\zachl\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.0\\microsoft.netcore.app.runtime.win-x64.9.0.0.nupkg.sha512",
-    "C:\\Users\\zachl\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.0.nupkg.sha512",
-    "C:\\Users\\zachl\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.0\\microsoft.aspnetcore.app.runtime.win-x64.9.0.0.nupkg.sha512"
+    "C:\\Users\\zachl\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512"
   ],
   "logs": []
 }

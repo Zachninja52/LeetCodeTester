@@ -47,3 +47,15 @@ def pyAddTwoNumbers(l1: ListNode, l2: ListNode):
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
         return dummy.next 
+def pyContainsDuplicate(nums: List[int]) -> bool:
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        parsedNums = dict()
+        for index,num in enumerate(nums):
+            if nums[index] in parsedNums:
+                return True
+            else:
+                parsedNums[nums[index]] = index
+        return False

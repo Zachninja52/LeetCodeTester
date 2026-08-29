@@ -178,6 +178,10 @@ object[] GetDefaultParameters(MethodInfo method)
             parametersToPass = [l11b,l21b];
             parametersToPass = [l11b,l21b];
             break;
+        case "ContainsDuplicate":
+            int[] intList = [1,2,3,1];
+            parametersToPass = [intList];
+            break;
     }
     return parametersToPass;
 }
@@ -203,6 +207,10 @@ void PrintOutputBasedOnResultType(object result)
 
         string finalString = $"(ListNode) Output: [{string.Join(", ",listNodeArray)}]";
         Console.WriteLine(finalString);
+    }
+    else if (result is bool)
+    {
+        Console.WriteLine($"(bool) Output: {result}");
     }
 }
 

@@ -21,8 +21,10 @@ def ConvertResultToStringOutput(result):
         finalAsString = ", ".join(final)
         return "(ListNode) Output: [" + finalAsString + "]"
     elif isinstance(result, (list, tuple)):
-        finalAsString = ", ".join(map(str, result))
-        return "(int[]) Output: [" + finalAsString + "]"
+        intListAsString = ", ".join(map(str, result))
+        return "(int[]) Output: [" + intListAsString + "]"
+    elif resultType is bool:
+        return "(bool) Output: " + str(result)
     else:
         finalAsString = ", ".join(result)
         return "(string[]) Output: [" + finalAsString + "]"
@@ -61,6 +63,8 @@ def GetFunctionArguments(name):
             l21.next = l22;
             l22.next = l23;
             return [l11,l21]
+        case "pyContainsDuplicate":
+            return [[1,2,3,1]];
 
 
 

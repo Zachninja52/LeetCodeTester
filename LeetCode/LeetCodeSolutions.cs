@@ -145,5 +145,21 @@ public class LeetCodeSolutions
         return dummy.next;
     }
 
+    public bool ContainsDuplicate(int[] nums) {
+        Dictionary<int,int> checkedNums = new Dictionary<int,int>();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (checkedNums.ContainsKey(nums[i]))
+            {
+                return true;
+            }
+            else
+            {
+                checkedNums[nums[i]] = i;
+            }
+        }
+        return false;
+    }
+
 }
 
