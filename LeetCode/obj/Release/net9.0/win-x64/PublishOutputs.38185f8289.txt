@@ -1,0 +1,4 @@
+C:\Users\zachl\OneDrive\Desktop\LeetCode\bin\Release\net9.0\win-x64\publish\LeetCode.pdb
+C:\Users\zachl\OneDrive\Desktop\LeetCode\bin\Release\net9.0\win-x64\publish\LeetCodeSolutions.py
+C:\Users\zachl\OneDrive\Desktop\LeetCode\bin\Release\net9.0\win-x64\publish\PythonSetup.py
+C:\Users\zachl\OneDrive\Desktop\LeetCode\bin\Release\net9.0\win-x64\publish\LeetCode.exe
