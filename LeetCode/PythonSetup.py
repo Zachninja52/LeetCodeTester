@@ -22,7 +22,7 @@ def ConvertResultToStringOutput(result):
         return "(ListNode) Output: [" + finalAsString + "]"
     elif isinstance(result, (list, tuple)):
         intListAsString = ", ".join(map(str, result))
-        return "(int[]) Output: [" + intListAsString + "]"
+        return "(list) Output: [" + intListAsString + "]"
     elif resultType is bool:
         return "(bool) Output: " + str(result)
     else:
@@ -65,6 +65,14 @@ def GetFunctionArguments(name):
             return [l11,l21]
         case "pyContainsDuplicate":
             return [[1,2,3,1]];
+        case "pyIsAnagram":
+            s = "ccaar"
+            t = "aaccr"
+            return [s,t];
+        case "pyGroupAnagrams":
+                    anagrams = ["yo","oy","yolo","looy","yale","leya"]
+                    return [anagrams];
+        
 
 
 

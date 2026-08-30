@@ -182,6 +182,16 @@ object[] GetDefaultParameters(MethodInfo method)
             int[] intList = [1,2,3,1];
             parametersToPass = [intList];
             break;
+        case "IsAnagramUnicode":
+            string s = "raccc";
+            string t = "carcc";
+            parametersToPass = [s,t];
+            break;
+        case "IsAnagram":
+            s = "raccc";
+            t = "carcc";
+            parametersToPass = [s,t];
+            break;
     }
     return parametersToPass;
 }

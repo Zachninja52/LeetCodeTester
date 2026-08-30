@@ -1,5 +1,6 @@
 
 from typing import List
+from collections import defaultdict
 
 class ListNode(object):
     def __init__(self, val=0, next=None):
@@ -47,6 +48,7 @@ def pyAddTwoNumbers(l1: ListNode, l2: ListNode):
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
         return dummy.next 
+
 def pyContainsDuplicate(nums: List[int]) -> bool:
         """
         :type nums: List[int]
@@ -59,3 +61,40 @@ def pyContainsDuplicate(nums: List[int]) -> bool:
             else:
                 parsedNums[nums[index]] = index
         return False
+
+def pyIsAnagram(s: str, t: str)->bool:
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(s) != len(t):
+            return False
+        arr = [0] * 26
+        for i in range(len(s)):
+            zeroBasedIndexS = ord(s[i]) - ord('a')
+            zeroBasedIndexT = ord(t[i]) - ord('a')
+            arr[zeroBasedIndexS] += 1
+            arr[zeroBasedIndexT] -= 1
+        
+        for val in arr:
+            if val != 0:
+                return False
+        return True
+def pyGroupAnagrams(strs: list[str]) ->list[list[str]]:
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        finalMap = defaultdict(list)
+        for elem in strs:
+            key = [0] * 26
+            for character in elem:
+                index = ord(character) - ord("a")
+                key[index] += 1
+            hashLookup = tuple(key)
+            finalMap[hashLookup].append(elem)
+           
+        return list(finalMap.values())
+        
+

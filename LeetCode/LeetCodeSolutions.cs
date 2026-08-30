@@ -160,6 +160,72 @@ public class LeetCodeSolutions
         }
         return false;
     }
+    public bool IsAnagramUnicode(string s, string t) 
+    {
+        if (s.Length != t.Length)
+        {
+            return false;
+        }
+        
+        Dictionary<char, int> dictS = new Dictionary<char,int>();
+        Dictionary<char, int> dictT = new Dictionary<char,int>();
+        //set up two dicts
+        for (int i = 0; i < s.Length; i++)
+        {
+            //The value is the number of times that charater appears
+            if (dictS.ContainsKey(s[i]))
+            {
+                dictS[s[i]]++;
+            }   
+            else
+            {
+                dictS[s[i]] = 1;
+            }
+            if (dictT.ContainsKey(t[i]))
+            {
+                dictT[t[i]]++;
+            } 
+            else
+            {
+                 dictT[t[i]] = 1;
+            }
+        }
 
+        //compare
+        for (int j = 0; j < t.Length; j++)
+        {
+            // if dicts doesnt have t's key or it doesnt have the right number of characters
+            if (!dictS.ContainsKey(t[j]) || (dictS.ContainsKey(t[j]) &&  dictS[t[j]] != dictT[t[j]] ) )
+            {
+                return false;
+            }
+        }
+        return true;
+
+    }
+
+    public bool IsAnagram(string s, string t) 
+    {
+        if (s.Length != t.Length)
+        {
+            return false;
+        }
+        int[] arr = new int[26];
+        for (int i = 0; i < s.Length; i++)
+        {
+            int zeroBasedIndexS =  s[i] - 'a';
+            int zeroBasedIndexT = t[i] - 'a' ;
+            arr[zeroBasedIndexS]++;
+            arr[zeroBasedIndexT]--;
+        }
+        foreach(int val in arr)
+        {
+            if (val != 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
