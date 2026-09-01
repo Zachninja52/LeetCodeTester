@@ -72,6 +72,37 @@ def GetFunctionArguments(name):
         case "pyGroupAnagrams":
                     anagrams = ["yo","oy","yolo","looy","yale","leya"]
                     return [anagrams];
+        case "pyTopKFrequentBruteForce":
+              val = [1,2,2,2,3,3]
+              k = 2
+              return [val,k]
+        case "pyTopKFrequent":
+                      val = [1,2,2,2,3,3]
+                      k = 2
+                      return [val,k]
+        case "pyIsPalindrome":
+                return ["racecar"]
+        case "pyReverseListNewList":
+            l11 =  LeetCodeSolutions.ListNode()
+            l12 =  LeetCodeSolutions.ListNode()
+            l13 =  LeetCodeSolutions.ListNode()
+            l11.next = l12;
+            l12.next = l13;
+            l11.val = 1;
+            l12.val = 2;
+            l13.val = 3;
+            return [l11]
+        case "pyReverseList":
+                    l11 =  LeetCodeSolutions.ListNode()
+                    l12 =  LeetCodeSolutions.ListNode()
+                    l13 =  LeetCodeSolutions.ListNode()
+                    l11.next = l12;
+                    l12.next = l13;
+                    l11.val = 1;
+                    l12.val = 2;
+                    l13.val = 3;
+                    return [l11]
+        
         
 
 

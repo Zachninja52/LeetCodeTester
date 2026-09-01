@@ -96,5 +96,124 @@ def pyGroupAnagrams(strs: list[str]) ->list[list[str]]:
             finalMap[hashLookup].append(elem)
            
         return list(finalMap.values())
+
+def pyTopKFrequentBruteForce(nums: list[int], k:int) ->list[int]:
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        dictionary = defaultdict(int)
+        for elem in nums:
+            dictionary[elem] += 1
+
+        dictList = []
+        for key,count in dictionary.items():
+            dictList.append((key,count))
+
+        for i in range(len(dictList)):
+            for j in range(i+1,len(dictList)):
+                temp = []
+                if dictList[j][1] > dictList[i][1]:
+                    temp = dictList[i]
+                    dictList[i] = dictList[j]
+                    dictList[j] = temp
+
+        results = []
+        for index in range(k):
+            results.append(dictList[index][0])
+        return results
+def pyTopKFrequent(nums: list[int], k:int) ->list[int]:
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        #count frequency
+        freqMap = {}
+        for elem in nums:
+            if elem in freqMap:
+                freqMap[elem] += 1
+            else: 
+                freqMap[elem] = 1
+
+        #sort into list by index = frequency
+        lengthRange = len(nums)+1
+        sortedList = [[] for _ in range(lengthRange)]
+        for key in freqMap:
+            (sortedList[freqMap[key]]).append(key)
+
+        #grab the highest two
+        result = []
+        for index in range(lengthRange):
+            for elem in sortedList[len(nums) - index]:
+                if elem != [] and k>0:
+                    result.append(elem)
+                    k -= 1
+
+        return result
+def pyIsPalindrome(s: str) -> bool:
+        """
+        :type s: str
+        :rtype: bool
+        """
+        newS = "".join(char for char in s if char.isalnum())
+        s = newS.lower()
+        strLen = len(s)
+
+        for i in range(strLen):
+            left = s[i]
+            right = s[strLen - i-1]
+            
+            if left.lower() != right.lower():
+                return False
+        return True
+
+def pyReverseListNewList(head: ListNode) ->ListNode:
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        firstBackDummy = ListNode()
+        newBackDummy = firstBackDummy
+
+        if head == None:
+            return None
+
+        while head != None:
+            newNode = ListNode()
+            newNode.val = head.val
+            newNode.next = newBackDummy
+
+            if newNode.next == firstBackDummy:
+                newNode.next = None
+                
+            newBackDummy = newNode
+            head = head.next
+
+        return newBackDummy
+def pyReverseList(head: ListNode) ->ListNode:
+    """
+    :type head: Optional[ListNode]
+    :rtype: Optional[ListNode]
+    """
+    prev = None
+    curr = head
+
+    while curr != None:
+        oldNext = curr.next
+        curr.next = prev
+        prev = curr
+        curr = oldNext
+
+    return prev
+        
+
+
+
+
+            
+
+        
         
 
